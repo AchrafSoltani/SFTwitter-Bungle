@@ -6,6 +6,7 @@
  * The first PHP Library to support OAuth for Twitter's REST API.
  */
 
+namespace Twitter;
 /* Load OAuth lib. You can find it at http://oauth.net */
 require_once('OAuth.php');
 
