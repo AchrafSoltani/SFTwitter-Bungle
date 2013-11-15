@@ -14,6 +14,10 @@
 
 namespace SFTwitter;
 
+require_once('twitteroauth/twitteroauth.php');
+
+use Twitter\TwitterOAuth as TwitterAPI;
+
 class SFTwitter
 {
 
