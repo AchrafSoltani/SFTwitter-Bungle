@@ -1,0 +1,21 @@
+{
+    "name": "achrafsoltani/sftwitter",
+    "description": "A wrapper class for the Twitter API integrated to Symfony 2",
+    "keywords": ["twitter", "symfony", "feed", "integrations"],
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Achraf Soltani",
+            "email": "soltani.achraf@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Tweetie": "src/"
+        }
+    }
+}
