@@ -4,8 +4,6 @@
 /* Generic exception class
  */
 
-namespace Twitter;
-
 if (!class_exists('OAuthException')) {
   class OAuthException extends \Exception {
     // pass
