@@ -12,11 +12,11 @@
  * @date        11/15/2013
  */
 
-namespace SFTwitter;
 
+
+namespace SFTwitter;
 require_once('twitteroauth/twitteroauth.php');
 
-use Twitter\TwitterOAuth as TwitterAPI;
 
 class SFTwitter
 {
@@ -39,12 +39,12 @@ class SFTwitter
 
     private function _connect()
     {
-        return new TwitterAPI($this->CONSUMER_KEY, $this->CONSUMER_SECRET, $this->ACCESS_TOKEN, $this->ACCESS_TOKEN_SECRET);
+        return new \TwitterOAuth($this->CONSUMER_KEY, $this->CONSUMER_SECRET, $this->ACCESS_TOKEN, $this->ACCESS_TOKEN_SECRET);
     }
 
     public function getStatuses($max_number = 5, $excluse_replies = true)
     {
-        echo "getting statues";
+        echo "getting statues".PHP_EOL;
         $tweets = $this->_connection->get("https://api.twitter.com/1.1/statuses/user_timeline.json?count=".$max_number."&exclude_replies=".$excluse_replies);
         return json_encode($tweets);
     }
