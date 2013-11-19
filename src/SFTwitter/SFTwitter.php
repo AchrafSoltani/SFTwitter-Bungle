@@ -44,7 +44,6 @@ class SFTwitter
 
     public function getStatuses($max_number = 5, $excluse_replies = true)
     {
-        echo "getting statues".PHP_EOL;
         $tweets = $this->_connection->get("https://api.twitter.com/1.1/statuses/user_timeline.json?count=".$max_number."&exclude_replies=".$excluse_replies);
         return json_encode($tweets);
     }
