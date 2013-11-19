@@ -3,6 +3,7 @@
     "description": "A wrapper class for the Twitter API integrated to Symfony 2",
     "keywords": ["twitter", "symfony", "feed", "integrations"],
     "license": "GPL",
+    "version": "1.0",
     "authors": [
         {
             "name": "Achraf Soltani",
